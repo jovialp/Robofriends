@@ -1,10 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import "tachyons";
+import LogRocket from 'logrocket';
+
+// Main App
 import App from './App';
+
+// Style
+import './index.css';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+LogRocket.init('htm0sp/robofriends');
+LogRocket.identify('001', {
+  name: 'db',
+  email: 'db@jovialp.com',
+
+  // Add your own custom user variables here, ie:
+  env: 'local'
+});
 root.render(
   <React.StrictMode>
     <App />
