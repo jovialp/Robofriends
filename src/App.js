@@ -5,6 +5,9 @@ import Searchbox from './Searchbox';
 
 import { robots } from './robots';
 
+// Style
+import './App.css';
+
 const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredRobots, setFilteredRobots] = useState(robots);
