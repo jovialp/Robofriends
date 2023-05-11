@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import 'tachyons';
 import LogRocket from 'logrocket';
 
+// Style
+import './index.css';
+
 // Main App
 import App from './App';
 
